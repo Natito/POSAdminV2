@@ -1,0 +1,14 @@
+com.puntodeventa.global.Entity
+com.puntodeventa.global.SingleInstanceManager
+com.puntodeventa.global.Util
+com.puntodeventa.global.Util.Constants
+com.puntodeventa.global.Util.Extended
+com.puntodeventa.global.printservice
+com.puntodeventa.global.report.DataSource
+com.puntodeventa.global.report.bean
+com.puntodeventa.global.report.viewer
+com.puntodeventa.mvc.Controller
+com.puntodeventa.mvc.Model
+com.puntodeventa.mvc.Views
+com.puntodeventa.services.DAO
+com.puntodeventa.settings

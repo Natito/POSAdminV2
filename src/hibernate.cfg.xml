@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    
+    <property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
+    <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+    <property name="show_sql">true</property>
+    <property name="connection.pool_size">5</property>
+    
+    <!-- Commentar si se utiliza el nuevo metodo en HibernateUtil-->
+    <!--
+    <property name="connection.url">jdbc:oracle:thin:@//localhost:1521/XE</property>
+    <property name="connection.username">vt</property>
+    <property name="connection.password">vt</property>
+    -->
+    <!--
+        <property name="hbm2ddl.auto">create-drop</property>
+    -->
+    <property name="current_session_context_class">thread</property>
+    <property name="hibernate.current_session_context_class">org.hibernate.context.ThreadLocalSessionContext</property>
+    <mapping class="com.puntodeventa.global.Entity.Usuario"/>
+    <mapping class="com.puntodeventa.global.Entity.Product"/>
+    <mapping class="com.puntodeventa.global.Entity.Proveedor"/>
+    <mapping class="com.puntodeventa.mvc.Model.Negocio"/>
+    <mapping class="com.puntodeventa.mvc.Model.Category"/>
+    <mapping class="com.puntodeventa.global.Entity.Compra"/>
+    <mapping class="com.puntodeventa.global.Entity.AccesoForms"/>
+    <mapping class="com.puntodeventa.global.Entity.Formularios"/>
+    <mapping class="com.puntodeventa.global.report.bean.ListProduct"/>
+    <mapping class="com.puntodeventa.global.report.bean.VentaProduct"/>
+    <mapping class="com.puntodeventa.mvc.Model.CompraDetalle"/>
+  </session-factory>
+</hibernate-configuration>
